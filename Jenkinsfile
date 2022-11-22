@@ -21,11 +21,11 @@ pipeline{
 		     sh 'mvn test'
 			}
 		 }
-		 stage('metricCheck'){
+		 /*stage('metricCheck'){
 		   steps{
 		     sh 'mvn cobertura:cobertura -Dcobertura.report.format=xml'
 		   }
-		 }
+		 }*/
 		 stage('package'){
 		   steps{
 		     sh 'mvn package'
