@@ -41,9 +41,7 @@ pipeline{
      sh label: '', script: ''  
 mkdir docker
 cd docker
-# copy the .war file into the current directory
 cp /var/lib/jenkins/workspace/package/target/addressbook.war .
-# Create Dockerfile
 touch dockerfile
 cat <<EOT>> dockerfile
 FROM tomcat
