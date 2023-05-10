@@ -50,7 +50,7 @@ EXPOSE 8080
 CMD ["catalina.sh", "run"]
 EOT
 sudo docker build -t myproject:$BUILD_NUMBER .
-sudo docker run -idt -P myproject:$BUILD_NUMBER
+sudo docker run -idt -P myproject:$BUILD_NUMBER .
       }
     } 
    }
